@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Hello, Rails!</title>
+</head>
+<body>
+	<h1>Hello from Rails!</h1>
+	<ul>
+	<% for file in @files %>
+	<li><%=file%></li>
+	<% end %>
+	<li>Addition: <%= 1+2 %> </li>
+	<li>Concatenation: <%= "cow" + "boy" %> </li>
+	<li>Time in now: <%= @time %> </li>
+
+</ul>
+
+
+<%= link_to("Goodbye",:action=>"goodbye") %>
+
+<% 6.upto(15)  do | count |%>
+
+Counting upto <%=count%>
+
+<% end %>
